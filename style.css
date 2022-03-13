@@ -61,28 +61,43 @@ body {
     height: 18.875rem;
     border-radius: 15px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
-.image:hover {
-    cursor: pointer;
-    background-color: rgba(0,0,0);
+.square {
+    position: absolute;
+    height: 302px;
+    width: 301px;
+    border-radius: 15px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    z-index: 3;
 }
 
 .imageoverlay {
     cursor: pointer;
-    display: none;
     position: absolute;
-    z-index: 3;
+    z-index: 4;
+}
+
+.square-imageoverlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 302px;
+    width: 301px;
+    position: absolute;
+    cursor: pointer;
 }
 
 /* Hover mouse over image */
-.image:hover + .imageoverlay {
-    display: block;
+.image:hover + .square-imageoverlay{
+    cursor: pointer;
+    display: flex;
 }
 
-.imageoverlay:hover {
-    display: block;
+.square-imageoverlay:hover {
+    cursor: pointer;
+    display: flex;
 }
 
 .cardBG {
