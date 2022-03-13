@@ -14,5 +14,5 @@ Users should be able to:
 
 ### Screenshot
 
-![Inactive](.images/inactive-screenshot.png)
-![Active](.images/active-screenshot.png)
+![Inactive](images/inactive-screenshot.png)
+![Active](images/active-screenshot.png)
